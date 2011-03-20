@@ -7,8 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt4 import QtCore, QtGui
-from PyQt4.Qwt5 import *
+from PySide import QtCore, QtGui
 
 class Ui_ada(object):
     def setupUi(self, ada):
@@ -236,4 +235,4 @@ class Ui_ada(object):
         self.connectLabel.setText(QtGui.QApplication.translate("ada", "not connected", None, QtGui.QApplication.UnicodeUTF8))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.Com), QtGui.QApplication.translate("ada", "Com", None, QtGui.QApplication.UnicodeUTF8))
 
-#from qwt_plot import QwtPlot
+from qwt_plot import QwtPlot

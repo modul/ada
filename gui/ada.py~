@@ -19,7 +19,8 @@ class Ada(object):
         self.vref = 5.0
 
     def __del__(self):
-        del self.com
+		if self.com:
+			del self.com
 
     def __write(self, c):
         self.com.write(c)
