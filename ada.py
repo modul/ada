@@ -7,12 +7,16 @@
 
 import serial, time
 
+resolution = 10
+
 class Ada(object):
 
     def __init__(self, *args, **kwargs):
         self.com = serial.Serial(*args, **kwargs)
         if not self.com.getTimeout():
             self.com.setTimeout(1)
+
+        self.vref = 5.0
 
     def __del__(self):
         del self.com
@@ -28,9 +32,13 @@ class Ada(object):
         else:
             return None
 
+    def setVref(self, vref):
+        self.vref = vref
+
     def get_channel(self, channel):
         self.__write(str(channel))
-        self.__readword()
+        adc  = self.__readword()
+        volt = (adc * self.vref) / (2**resolution-1)
 
     def get1(self):
         self.get_channel(1)
