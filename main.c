@@ -9,6 +9,7 @@
  */
 
 #include <avr/io.h>
+#include <avr/interrupt.h>
 #include "softuart.h"
 
 uint16_t read_adc(uint8_t adc);
@@ -20,6 +21,7 @@ int main()
     uint16_t adc = 0;
 
     softuart_init();
+    sei();
 
     // enable ADC, VCC ref., set prescaler to 8
     ADCSRA = _BV(ADEN) | _BV(ADPS1) | _BV(ADPS0);
@@ -27,6 +29,7 @@ int main()
     while (1) {
         if (softuart_kbhit()) {
             c = softuart_getchar();
+         //   softuart_putchar(c);
            if (c == '1') {
                adc = read_adc(1);
                put_word(adc);
@@ -58,13 +61,13 @@ uint16_t read_adc(uint8_t adc)
         a += ADCW;
     }
    
-    a = a >> 2; // devide by 4 to get mean
+    a = a >> 2; // divide by 4 to get mean
                    
-    return (uint8_t) a;
+    return a;
 }
 
 void put_word(uint16_t word) 
 {
-    softuart_putchar((uint8_t) word >> 8);
-    softuart_putchar((uint8_t) word & 0xFF);
+    softuart_putchar((uint8_t) (word >> 8));
+    softuart_putchar((uint8_t) (word & 0xFF));
 }

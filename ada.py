@@ -11,52 +11,52 @@ resolution = 10
 
 class Ada(object):
 
-    def __init__(self, *args, **kwargs):
-        self.com = serial.Serial(*args, **kwargs)
-        if not self.com.getTimeout():
-            self.com.setTimeout(1)
+	def __init__(self, *args, **kwargs):
+		self.com = serial.Serial(*args, **kwargs)
+		if not self.com.getTimeout():
+			self.com.setTimeout(1)
 
-        self.vref = 5.0
+		self.vref = 5.0
 
-    def __del__(self):
-        del self.com
+	def __del__(self):
+		del self.com
 
-    def __write(self, c):
-        self.com.write(c)
+	def __write(self, c):
+		self.com.write(c)
 
-    def __readword(self):
-        w = self.com.read(2)
-        if len(w) < 2:
-            msb, lsb = w[0], w[1]
-            return (msb << 8) + lsb
-        else:
-            return None
+	def __readword(self):
+		w = self.com.read(2)
+		if len(w) == 2:
+			msb, lsb = ord(w[0]), ord(w[1])
+			return (msb << 8) + lsb
+		else:
+			return None
 
-    def setVref(self, vref):
-        self.vref = vref
+	def setVref(self, vref):
+		self.vref = vref
 
-    def get_channel(self, channel):
-        self.__write(str(channel))
-        adc  = self.__readword()
-        #if self.vref != 0 and self.vref is not None:
-			#volt = adc * self.vref / ((2**resolution)-1)
-			#return volt
-		#else:
-			#return adc
-			
-    def get1(self):
-        self.get_channel(1)
+	def get_channel(self, channel):
+		self.__write(str(channel))
+		adc  = self.__readword()
+		if adc is not None and self.vref != 0 and self.vref is not None:
+			volt = adc * self.vref / ((2**resolution)-1)
+			return volt
+		else:
+			return adc
 
-    def get2(self):
-        self.get_channel(2)
+	def get1(self):
+		return self.get_channel(1)
 
-    def get3(self):
-        self.get_channel(3)
+	def get2(self):
+		return self.get_channel(2)
+
+	def get3(self):
+		return self.get_channel(3)
 
 	def get_all(self):
 		return (self.get1(), self.get2(), self.get3())
 
-    def log(self, interval):
-        print self.get1(), self.get2(), self.get3()
-        time.sleep(interval)
+	def log(self, interval):
+		print self.get1(), self.get2(), self.get3()
+		time.sleep(interval)
 

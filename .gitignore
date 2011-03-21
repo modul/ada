@@ -1,0 +1,7 @@
+*.o
+*.out
+*.map
+*.lst
+*~
+*.pyc
+*.hex

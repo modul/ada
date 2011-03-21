@@ -2,13 +2,14 @@
 
 # Form implementation generated from reading ui file 'ada.ui'
 #
-# Created: Sun Mar 20 23:52:16 2011
+# Created: Mon Mar 21 01:02:52 2011
 #      by: PySide uic UI code generator
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt4 import QtCore, QtGui
 from PyQt4.Qwt5 import *
+
 
 class Ui_ada(object):
     def setupUi(self, ada):
@@ -27,14 +28,14 @@ class Ui_ada(object):
         self.qwtPlot.setGeometry(QtCore.QRect(10, 10, 771, 481))
         self.qwtPlot.setObjectName("qwtPlot")
         self.tabWidget = QtGui.QTabWidget(self.centralwidget)
-        self.tabWidget.setGeometry(QtCore.QRect(10, 510, 781, 81))
+        self.tabWidget.setGeometry(QtCore.QRect(10, 500, 781, 91))
         self.tabWidget.setTabPosition(QtGui.QTabWidget.South)
         self.tabWidget.setTabShape(QtGui.QTabWidget.Rounded)
         self.tabWidget.setObjectName("tabWidget")
         self.Mon = QtGui.QWidget()
         self.Mon.setObjectName("Mon")
         self.widget = QtGui.QWidget(self.Mon)
-        self.widget.setGeometry(QtCore.QRect(160, 10, 461, 31))
+        self.widget.setGeometry(QtCore.QRect(160, 20, 461, 31))
         self.widget.setObjectName("widget")
         self.horizontalLayout_3 = QtGui.QHBoxLayout(self.widget)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
@@ -64,7 +65,7 @@ class Ui_ada(object):
         self.Plot = QtGui.QWidget()
         self.Plot.setObjectName("Plot")
         self.widget1 = QtGui.QWidget(self.Plot)
-        self.widget1.setGeometry(QtCore.QRect(60, 10, 651, 31))
+        self.widget1.setGeometry(QtCore.QRect(60, 20, 651, 31))
         self.widget1.setObjectName("widget1")
         self.horizontalLayout = QtGui.QHBoxLayout(self.widget1)
         self.horizontalLayout.setObjectName("horizontalLayout")
@@ -124,7 +125,7 @@ class Ui_ada(object):
         self.Com = QtGui.QWidget()
         self.Com.setObjectName("Com")
         self.widget2 = QtGui.QWidget(self.Com)
-        self.widget2.setGeometry(QtCore.QRect(60, 10, 651, 31))
+        self.widget2.setGeometry(QtCore.QRect(60, 20, 651, 31))
         self.widget2.setObjectName("widget2")
         self.horizontalLayout_2 = QtGui.QHBoxLayout(self.widget2)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
@@ -163,7 +164,7 @@ class Ui_ada(object):
         ada.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(ada)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(2)
         QtCore.QObject.connect(self.gridCheckBox, QtCore.SIGNAL("toggled(bool)"), ada.gridEnable)
         QtCore.QObject.connect(self.autoscaleCheckBox, QtCore.SIGNAL("toggled(bool)"), ada.setAutoscale)
         QtCore.QObject.connect(self.yminSpinBox, QtCore.SIGNAL("valueChanged(int)"), ada.setYmin)
@@ -236,4 +237,3 @@ class Ui_ada(object):
         self.connectLabel.setText(QtGui.QApplication.translate("ada", "not connected", None, QtGui.QApplication.UnicodeUTF8))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.Com), QtGui.QApplication.translate("ada", "Com", None, QtGui.QApplication.UnicodeUTF8))
 
-#from qwt_plot import QwtPlot
