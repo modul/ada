@@ -174,14 +174,13 @@ class Adaqt (QMainWindow, Ui_ada):
 		self.t.append(time.time()-self.t0)
 		
 		try:
-			ch1, ch2, ch3 = self.ada.get_all()
+			ch1 = self.ada.get1() or 0
+			ch2 = self.ada.get2() or 0
+			ch3 = self.ada.get3() or 0
 		except:
 			self.disconnectAda()
 			ch1 = ch2 = ch3 = 0
-		else:
-			if ch1 is None or ch2 is None or ch3 is None:
-				ch1 = ch2 = ch3 = 0
-			
+
 		self.ch1.append(ch1)
 		self.ch2.append(ch2)
 		self.ch3.append(ch3)
