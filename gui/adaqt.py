@@ -9,6 +9,9 @@ from ada import *
 	
 
 class Adaqt (QMainWindow, Ui_ada):
+	"""
+	Qt frontend to Ada (Analog Data Aquisition).
+	"""
 	
 	def __init__(self, parent=None):
 		super(Adaqt, self).__init__(parent)
@@ -221,10 +224,8 @@ class Adaqt (QMainWindow, Ui_ada):
 			
 		# replot
 		self.qwtPlot.replot()
-	
-	
-	
-	
+
+
 	def connectAda(self):
 		"""	Setup communication with the device. """
 		

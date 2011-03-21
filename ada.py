@@ -10,7 +10,22 @@ import serial, time
 resolution = 10
 
 class Ada(object):
-
+	"""
+	Frontend to Ada (Analog Data Aquisiton).
+	
+	Methods:
+	--------
+	
+	setVref(vref):  sets the reference voltage to calculate ADC voltage read
+	get_channel(channel): get the reading of the ADC channel 'channel‘.
+	get1(): get the reading of channel 1
+	get2(): get the reading of channel 2
+	get3(): get the reading of channel 3
+	get_all(): read all channels
+	log(interval): read all channels continuously with a pause of 'interval' between
+	"""
+	
+	
 	def __init__(self, *args, **kwargs):
 		self.com = serial.Serial(*args, **kwargs)
 		if not self.com.getTimeout():
