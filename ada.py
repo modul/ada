@@ -17,7 +17,7 @@ class Ada(object):
 	--------
 	
 	setVref(vref):  sets the reference voltage to calculate ADC voltage read
-	get_channel(channel): get the reading of the ADC channel 'channel‘.
+	get_channel(channel): get the reading of the ADC channel 'channel'.
 	get1(): get the reading of channel 1
 	get2(): get the reading of channel 2
 	get3(): get the reading of channel 3
