@@ -203,8 +203,8 @@ class Adaqt (QMainWindow, Ui_ada):
 				
 		# update curves
 		self.curve_ch1.setData(self.t, self.ch1)
-		self.curve_ch3.setData(self.t, self.ch2)
-		self.curve_ch2.setData(self.t, self.ch3)
+		self.curve_ch2.setData(self.t, self.ch2)
+		self.curve_ch3.setData(self.t, self.ch3)
 		
 		# cleanup points
 		for i in range(len(self.t)):

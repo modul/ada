@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccDSLDIE.s 			page 1
+GAS LISTING /tmp/ccEPZGsr.s 			page 1
 
 
    1               		.file	"main.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
   55               	.LM7:
   56 0024 C901      		movw r24,r18
   57               	/* epilogue start */
-GAS LISTING /tmp/ccDSLDIE.s 			page 2
+GAS LISTING /tmp/ccEPZGsr.s 			page 2
 
 
   58 0026 0895      		ret
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  112               	.LBE9:
  113               	.LBE8:
  114               	.LBB11:
-GAS LISTING /tmp/ccDSLDIE.s 			page 3
+GAS LISTING /tmp/ccEPZGsr.s 			page 3
 
 
  115               	.LBB12:
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  169 0078 8233      		cpi r24,lo8(50)
  170 007a 01F4      		brne .L14
  171               	.LBB18:
-GAS LISTING /tmp/ccDSLDIE.s 			page 4
+GAS LISTING /tmp/ccEPZGsr.s 			page 4
 
 
  172               	.LBB13:
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  226 00b2 391F      		adc r19,r25
  227               	.LM36:
  228 00b4 4F5F      		subi r20,lo8(-(1))
-GAS LISTING /tmp/ccDSLDIE.s 			page 5
+GAS LISTING /tmp/ccEPZGsr.s 			page 5
 
 
  229 00b6 4430      		cpi r20,lo8(4)
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  283 003c 9000 0000 		.long	.LFE2-.LFB2
  284               		.p2align	2
  285               	.LEFDE4:
-GAS LISTING /tmp/ccDSLDIE.s 			page 6
+GAS LISTING /tmp/ccEPZGsr.s 			page 6
 
 
  286               		.text
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  340 006d 8E00 0000 		.long	.LVL18-.Ltext0
  341 0071 0100      		.word	0x1
  342 0073 68        		.byte	0x68
-GAS LISTING /tmp/ccDSLDIE.s 			page 7
+GAS LISTING /tmp/ccEPZGsr.s 			page 7
 
 
  343 0074 9A00 0000 		.long	.LVL19-.Ltext0
@@ -418,7 +418,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  397 00ef 64        		.byte	0x64
  398 00f0 0000 0000 		.long	0x0
  399 00f4 0000 0000 		.long	0x0
-GAS LISTING /tmp/ccDSLDIE.s 			page 8
+GAS LISTING /tmp/ccEPZGsr.s 			page 8
 
 
  400               	.LLST11:
@@ -478,7 +478,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  454 0037 02        		.uleb128 0x2
  455 0038 01        		.byte	0x1
  456 0039 08        		.byte	0x8
-GAS LISTING /tmp/ccDSLDIE.s 			page 9
+GAS LISTING /tmp/ccEPZGsr.s 			page 9
 
 
  457 003a 0000 0000 		.long	.LASF1
@@ -538,7 +538,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  511 00a2 00        		.byte	0x0
  512 00a3 08        		.uleb128 0x8
  513 00a4 7300 0000 		.long	0x73
-GAS LISTING /tmp/ccDSLDIE.s 			page 10
+GAS LISTING /tmp/ccEPZGsr.s 			page 10
 
 
  514 00a8 0000 0000 		.long	.LFB3
@@ -598,7 +598,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  568 0121 07        		.uleb128 0x7
  569 0122 6164 6300 		.string	"adc"
  570 0126 01        		.byte	0x1
-GAS LISTING /tmp/ccDSLDIE.s 			page 11
+GAS LISTING /tmp/ccEPZGsr.s 			page 11
 
 
  571 0127 15        		.byte	0x15
@@ -658,7 +658,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  625 01ae 00        		.byte	0x0
  626 01af 00        		.byte	0x0
  627 01b0 02        		.uleb128 0x2
-GAS LISTING /tmp/ccDSLDIE.s 			page 12
+GAS LISTING /tmp/ccEPZGsr.s 			page 12
 
 
  628 01b1 01        		.byte	0x1
@@ -718,7 +718,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  682 0031 0B        		.uleb128 0xb
  683 0032 03        		.uleb128 0x3
  684 0033 08        		.uleb128 0x8
-GAS LISTING /tmp/ccDSLDIE.s 			page 13
+GAS LISTING /tmp/ccEPZGsr.s 			page 13
 
 
  685 0034 00        		.byte	0x0
@@ -778,7 +778,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  739 006a 11        		.uleb128 0x11
  740 006b 01        		.uleb128 0x1
  741 006c 12        		.uleb128 0x12
-GAS LISTING /tmp/ccDSLDIE.s 			page 14
+GAS LISTING /tmp/ccEPZGsr.s 			page 14
 
 
  742 006d 01        		.uleb128 0x1
@@ -838,7 +838,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  796 00a3 13        		.uleb128 0x13
  797 00a4 00        		.byte	0x0
  798 00a5 00        		.byte	0x0
-GAS LISTING /tmp/ccDSLDIE.s 			page 15
+GAS LISTING /tmp/ccEPZGsr.s 			page 15
 
 
  799 00a6 0D        		.uleb128 0xd
@@ -898,7 +898,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  853 00dc 1D        		.uleb128 0x1d
  854 00dd 01        		.byte	0x1
  855 00de 31        		.uleb128 0x31
-GAS LISTING /tmp/ccDSLDIE.s 			page 16
+GAS LISTING /tmp/ccEPZGsr.s 			page 16
 
 
  856 00df 13        		.uleb128 0x13
@@ -958,7 +958,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  905      00
  906 0031 0000 0000 		.long	0x0
  907               		.section	.debug_aranges,"",@progbits
-GAS LISTING /tmp/ccDSLDIE.s 			page 17
+GAS LISTING /tmp/ccEPZGsr.s 			page 17
 
 
  908 0000 1C00 0000 		.long	0x1c
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  962               	.LASLTP0:
  963 000a 01        		.byte	0x1
  964 000b 01        		.byte	0x1
-GAS LISTING /tmp/ccDSLDIE.s 			page 18
+GAS LISTING /tmp/ccEPZGsr.s 			page 18
 
 
  965 000c F6        		.byte	0xf6
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  1012 008b 02        		.byte	0x2
  1013 008c 0000 0000 		.long	.LM5
  1014 0090 15        		.byte	0x15
-GAS LISTING /tmp/ccDSLDIE.s 			page 19
+GAS LISTING /tmp/ccEPZGsr.s 			page 19
 
 
  1015 0091 00        		.byte	0x0
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  1069 00e5 02        		.byte	0x2
  1070 00e6 0000 0000 		.long	.LM16
  1071 00ea 31        		.byte	0x31
-GAS LISTING /tmp/ccDSLDIE.s 			page 20
+GAS LISTING /tmp/ccEPZGsr.s 			page 20
 
 
  1072 00eb 00        		.byte	0x0
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  1126 013f 00        		.byte	0x0
  1127 0140 05        		.uleb128 0x5
  1128 0141 02        		.byte	0x2
-GAS LISTING /tmp/ccDSLDIE.s 			page 21
+GAS LISTING /tmp/ccEPZGsr.s 			page 21
 
 
  1129 0142 0000 0000 		.long	.LM27
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  1183 0199 71        		.sleb128 -15
  1184 019a 01        		.byte	0x1
  1185 019b 00        		.byte	0x0
-GAS LISTING /tmp/ccDSLDIE.s 			page 22
+GAS LISTING /tmp/ccEPZGsr.s 			page 22
 
 
  1186 019c 05        		.uleb128 0x5
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  1213      385F 7400 
  1214               	.LASF7:
  1215 0074 6C6F 6E67 		.string	"long long int"
-GAS LISTING /tmp/ccDSLDIE.s 			page 23
+GAS LISTING /tmp/ccEPZGsr.s 			page 23
 
 
  1215      206C 6F6E 
@@ -1348,20 +1348,20 @@ GAS LISTING /tmp/ccDSLDIE.s 			page 1
  1227 00c2 7369 676E 		.string	"signed char"
  1227      6564 2063 
  1227      6861 7200 
-GAS LISTING /tmp/ccDSLDIE.s 			page 24
+GAS LISTING /tmp/ccEPZGsr.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-     /tmp/ccDSLDIE.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccDSLDIE.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccDSLDIE.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccDSLDIE.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccDSLDIE.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccDSLDIE.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/ccDSLDIE.s:20     .text:00000000 read_adc
-     /tmp/ccDSLDIE.s:63     .text:00000028 put_word
-     /tmp/ccDSLDIE.s:88     .text:00000038 main
+     /tmp/ccEPZGsr.s:2      *ABS*:0000003f __SREG__
+     /tmp/ccEPZGsr.s:3      *ABS*:0000003e __SP_H__
+     /tmp/ccEPZGsr.s:4      *ABS*:0000003d __SP_L__
+     /tmp/ccEPZGsr.s:5      *ABS*:00000034 __CCP__
+     /tmp/ccEPZGsr.s:6      *ABS*:00000000 __tmp_reg__
+     /tmp/ccEPZGsr.s:7      *ABS*:00000001 __zero_reg__
+     /tmp/ccEPZGsr.s:20     .text:00000000 read_adc
+     /tmp/ccEPZGsr.s:63     .text:00000028 put_word
+     /tmp/ccEPZGsr.s:88     .text:00000038 main
 
 UNDEFINED SYMBOLS
 __do_copy_data

@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccBw2xMz.s 			page 1
+GAS LISTING /tmp/ccpYk7fr.s 			page 1
 
 
    1               		.file	"softuart.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
   55 0032 C198      		cbi 56-32,1
   56               	.L5:
   57               	.LM8:
-GAS LISTING /tmp/ccBw2xMz.s 			page 2
+GAS LISTING /tmp/ccpYk7fr.s 			page 2
 
 
   58 0034 8091 0000 		lds r24,internal_tx_buffer
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  112 00a4 8093 0000 		sts qin,r24
  113 00a8 8091 0000 		lds r24,qin
  114 00ac 8032      		cpi r24,lo8(32)
-GAS LISTING /tmp/ccBw2xMz.s 			page 3
+GAS LISTING /tmp/ccpYk7fr.s 			page 3
 
 
  115 00ae 00F0      		brlo .L13
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  169 010e 01F4      		brne .L15
  170               	.L12:
  171               	.LM33:
-GAS LISTING /tmp/ccBw2xMz.s 			page 4
+GAS LISTING /tmp/ccpYk7fr.s 			page 4
 
 
  172 0110 81E0      		ldi r24,lo8(1)
@@ -238,11 +238,11 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  226 0142 F894      		cli
  227               	 ;  0 "" 2
  228               	.LM45:
-GAS LISTING /tmp/ccBw2xMz.s 			page 5
+GAS LISTING /tmp/ccpYk7fr.s 			page 5
 
 
  229               	/* #NOAPP */
- 230 0144 81E2      		ldi r24,lo8(33)
+ 230 0144 84E4      		ldi r24,lo8(68)
  231 0146 89BD      		out 73-32,r24
  232               	.LM46:
  233 0148 82E0      		ldi r24,lo8(2)
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  283               	softuart_getchar:
  284               	.LFB9:
  285               	.LM58:
-GAS LISTING /tmp/ccBw2xMz.s 			page 6
+GAS LISTING /tmp/ccpYk7fr.s 			page 6
 
 
  286               	/* prologue: function */
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  340               	.LM67:
  341               	/* prologue: function */
  342               	/* frame size = 0 */
-GAS LISTING /tmp/ccBw2xMz.s 			page 7
+GAS LISTING /tmp/ccpYk7fr.s 			page 7
 
 
  343               	.LM68:
@@ -418,7 +418,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  397 01d8 880F      		lsl r24
  398 01da 991F      		rol r25
  399               	.LVL15:
-GAS LISTING /tmp/ccBw2xMz.s 			page 8
+GAS LISTING /tmp/ccpYk7fr.s 			page 8
 
 
  400 01dc 9260      		ori r25,hi8(512)
@@ -478,7 +478,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  454 0218 8093 0000 		sts internal_tx_buffer,r24
  455               	.LM90:
  456 021c 2093 0000 		sts flag_tx_busy,r18
-GAS LISTING /tmp/ccBw2xMz.s 			page 9
+GAS LISTING /tmp/ccpYk7fr.s 			page 9
 
 
  457               	.LVL20:
@@ -538,7 +538,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  511               	.LVL26:
  512               	.L46:
  513 0258 F901      		movw r30,r18
-GAS LISTING /tmp/ccBw2xMz.s 			page 10
+GAS LISTING /tmp/ccpYk7fr.s 			page 10
 
 
  514               	.LBE22:
@@ -598,7 +598,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  568 0018 0000 0000 		.long	.LFB2
  569 001c 2E01 0000 		.long	.LFE2-.LFB2
  570               		.p2align	2
-GAS LISTING /tmp/ccBw2xMz.s 			page 11
+GAS LISTING /tmp/ccpYk7fr.s 			page 11
 
 
  571               	.LEFDE0:
@@ -658,7 +658,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  625 008c 1000 0000 		.long	.LFE12-.LFB12
  626               		.p2align	2
  627               	.LEFDE14:
-GAS LISTING /tmp/ccBw2xMz.s 			page 12
+GAS LISTING /tmp/ccpYk7fr.s 			page 12
 
 
  628               	.LSFDE16:
@@ -718,7 +718,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  682 0047 0100      		.word	0x1
  683 0049 68        		.byte	0x68
  684 004a C001 0000 		.long	.LVL13-.Ltext0
-GAS LISTING /tmp/ccBw2xMz.s 			page 13
+GAS LISTING /tmp/ccpYk7fr.s 			page 13
 
 
  685 004e D801 0000 		.long	.LVL14-.Ltext0
@@ -778,7 +778,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  739 00b5 0000 0000 		.long	0x0
  740 00b9 0000 0000 		.long	0x0
  741               	.LLST15:
-GAS LISTING /tmp/ccBw2xMz.s 			page 14
+GAS LISTING /tmp/ccpYk7fr.s 			page 14
 
 
  742 00bd 3202 0000 		.long	.LVL22-.Ltext0
@@ -838,7 +838,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  796 0050 02        		.uleb128 0x2
  797 0051 02        		.byte	0x2
  798 0052 07        		.byte	0x7
-GAS LISTING /tmp/ccBw2xMz.s 			page 15
+GAS LISTING /tmp/ccpYk7fr.s 			page 15
 
 
  799 0053 0000 0000 		.long	.LASF4
@@ -898,7 +898,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  853 00b2 6368 00   		.string	"ch"
  854 00b5 01        		.byte	0x1
  855 00b6 4C01      		.word	0x14c
-GAS LISTING /tmp/ccBw2xMz.s 			page 16
+GAS LISTING /tmp/ccpYk7fr.s 			page 16
 
 
  856 00b8 BD00 0000 		.long	0xbd
@@ -958,7 +958,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  910 012d 01        		.byte	0x1
  911 012e AE        		.byte	0xae
  912 012f 3700 0000 		.long	0x37
-GAS LISTING /tmp/ccBw2xMz.s 			page 17
+GAS LISTING /tmp/ccpYk7fr.s 			page 17
 
 
  913 0133 05        		.byte	0x5
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  967 01a8 15        		.uleb128 0x15
  968 01a9 01        		.byte	0x1
  969 01aa 0000 0000 		.long	.LASF22
-GAS LISTING /tmp/ccBw2xMz.s 			page 18
+GAS LISTING /tmp/ccpYk7fr.s 			page 18
 
 
  970 01ae 01        		.byte	0x1
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1024 0218 0000 0000 		.long	.LASF24
  1025 021c 01        		.byte	0x1
  1026 021d 4201      		.word	0x142
-GAS LISTING /tmp/ccBw2xMz.s 			page 19
+GAS LISTING /tmp/ccpYk7fr.s 			page 19
 
 
  1027 021f 01        		.byte	0x1
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1081 0296 5802 0000 		.long	0x258
  1082 029a 00        		.byte	0x0
  1083 029b 00        		.byte	0x0
-GAS LISTING /tmp/ccBw2xMz.s 			page 20
+GAS LISTING /tmp/ccpYk7fr.s 			page 20
 
 
  1084 029c 1E        		.uleb128 0x1e
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1138 0311 6501      		.word	0x165
  1139 0313 2C00 0000 		.long	0x2c
  1140 0317 0000 0000 		.long	.LLST15
-GAS LISTING /tmp/ccBw2xMz.s 			page 21
+GAS LISTING /tmp/ccpYk7fr.s 			page 21
 
 
  1141 031b 00        		.byte	0x0
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1195 038a 03        		.byte	0x3
  1196 038b 0000 0000 		.long	flag_rx_ready
  1197 038f 0F        		.uleb128 0xf
-GAS LISTING /tmp/ccBw2xMz.s 			page 22
+GAS LISTING /tmp/ccpYk7fr.s 			page 22
 
 
  1198 0390 0000 0000 		.long	.LASF36
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1252 000f 10        		.uleb128 0x10
  1253 0010 06        		.uleb128 0x6
  1254 0011 00        		.byte	0x0
-GAS LISTING /tmp/ccBw2xMz.s 			page 23
+GAS LISTING /tmp/ccpYk7fr.s 			page 23
 
 
  1255 0012 00        		.byte	0x0
@@ -1378,7 +1378,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1309 0048 27        		.uleb128 0x27
  1310 0049 0C        		.uleb128 0xc
  1311 004a 20        		.uleb128 0x20
-GAS LISTING /tmp/ccBw2xMz.s 			page 24
+GAS LISTING /tmp/ccpYk7fr.s 			page 24
 
 
  1312 004b 0B        		.uleb128 0xb
@@ -1438,7 +1438,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1366 0081 0E        		.uleb128 0xe
  1367 0082 3A        		.uleb128 0x3a
  1368 0083 0B        		.uleb128 0xb
-GAS LISTING /tmp/ccBw2xMz.s 			page 25
+GAS LISTING /tmp/ccpYk7fr.s 			page 25
 
 
  1369 0084 3B        		.uleb128 0x3b
@@ -1498,7 +1498,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1423 00ba 34        		.uleb128 0x34
  1424 00bb 00        		.byte	0x0
  1425 00bc 03        		.uleb128 0x3
-GAS LISTING /tmp/ccBw2xMz.s 			page 26
+GAS LISTING /tmp/ccpYk7fr.s 			page 26
 
 
  1426 00bd 08        		.uleb128 0x8
@@ -1558,7 +1558,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1480 00f3 11        		.uleb128 0x11
  1481 00f4 01        		.uleb128 0x1
  1482 00f5 12        		.uleb128 0x12
-GAS LISTING /tmp/ccBw2xMz.s 			page 27
+GAS LISTING /tmp/ccpYk7fr.s 			page 27
 
 
  1483 00f6 01        		.uleb128 0x1
@@ -1618,7 +1618,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1537 012c 01        		.uleb128 0x1
  1538 012d 12        		.uleb128 0x12
  1539 012e 01        		.uleb128 0x1
-GAS LISTING /tmp/ccBw2xMz.s 			page 28
+GAS LISTING /tmp/ccpYk7fr.s 			page 28
 
 
  1540 012f 40        		.uleb128 0x40
@@ -1678,7 +1678,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1594 0165 05        		.uleb128 0x5
  1595 0166 27        		.uleb128 0x27
  1596 0167 0C        		.uleb128 0xc
-GAS LISTING /tmp/ccBw2xMz.s 			page 29
+GAS LISTING /tmp/ccpYk7fr.s 			page 29
 
 
  1597 0168 49        		.uleb128 0x49
@@ -1738,7 +1738,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1651 019e 55        		.uleb128 0x55
  1652 019f 06        		.uleb128 0x6
  1653 01a0 58        		.uleb128 0x58
-GAS LISTING /tmp/ccBw2xMz.s 			page 30
+GAS LISTING /tmp/ccpYk7fr.s 			page 30
 
 
  1654 01a1 0B        		.uleb128 0xb
@@ -1798,7 +1798,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1708 01d7 11        		.uleb128 0x11
  1709 01d8 01        		.uleb128 0x1
  1710 01d9 12        		.uleb128 0x12
-GAS LISTING /tmp/ccBw2xMz.s 			page 31
+GAS LISTING /tmp/ccpYk7fr.s 			page 31
 
 
  1711 01da 01        		.uleb128 0x1
@@ -1858,7 +1858,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1765 0210 0B        		.uleb128 0xb
  1766 0211 00        		.byte	0x0
  1767 0212 00        		.byte	0x0
-GAS LISTING /tmp/ccBw2xMz.s 			page 32
+GAS LISTING /tmp/ccpYk7fr.s 			page 32
 
 
  1768 0213 26        		.uleb128 0x26
@@ -1918,7 +1918,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1805      00
  1806 0076 FD01 0000 		.long	0x1fd
  1807 007a 736F 6674 		.string	"softuart_kbhit"
-GAS LISTING /tmp/ccBw2xMz.s 			page 33
+GAS LISTING /tmp/ccpYk7fr.s 			page 33
 
 
  1807      7561 7274 
@@ -1978,7 +1978,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1841               	.LSLT0:
  1842 0004 0200      		.word	0x2
  1843 0006 6300 0000 		.long	.LELTP0-.LASLTP0
-GAS LISTING /tmp/ccBw2xMz.s 			page 34
+GAS LISTING /tmp/ccpYk7fr.s 			page 34
 
 
  1844               	.LASLTP0:
@@ -2038,7 +2038,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1890 0088 0000 0000 		.long	.LM4
  1891 008c 15        		.byte	0x15
  1892 008d 00        		.byte	0x0
-GAS LISTING /tmp/ccBw2xMz.s 			page 35
+GAS LISTING /tmp/ccpYk7fr.s 			page 35
 
 
  1893 008e 05        		.uleb128 0x5
@@ -2098,7 +2098,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  1947 00e5 00        		.byte	0x0
  1948 00e6 05        		.uleb128 0x5
  1949 00e7 02        		.byte	0x2
-GAS LISTING /tmp/ccBw2xMz.s 			page 36
+GAS LISTING /tmp/ccpYk7fr.s 			page 36
 
 
  1950 00e8 0000 0000 		.long	.LM16
@@ -2158,7 +2158,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  2004 013f 02        		.byte	0x2
  2005 0140 0000 0000 		.long	.LM27
  2006 0144 18        		.byte	0x18
-GAS LISTING /tmp/ccBw2xMz.s 			page 37
+GAS LISTING /tmp/ccpYk7fr.s 			page 37
 
 
  2007 0145 00        		.byte	0x0
@@ -2218,7 +2218,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  2061 019c 15        		.byte	0x15
  2062 019d 00        		.byte	0x0
  2063 019e 05        		.uleb128 0x5
-GAS LISTING /tmp/ccBw2xMz.s 			page 38
+GAS LISTING /tmp/ccpYk7fr.s 			page 38
 
 
  2064 019f 02        		.byte	0x2
@@ -2278,7 +2278,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  2118 01f6 16        		.byte	0x16
  2119 01f7 00        		.byte	0x0
  2120 01f8 05        		.uleb128 0x5
-GAS LISTING /tmp/ccBw2xMz.s 			page 39
+GAS LISTING /tmp/ccpYk7fr.s 			page 39
 
 
  2121 01f9 02        		.byte	0x2
@@ -2338,7 +2338,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  2175 0250 05        		.uleb128 0x5
  2176 0251 02        		.byte	0x2
  2177 0252 0000 0000 		.long	.LM61
-GAS LISTING /tmp/ccBw2xMz.s 			page 40
+GAS LISTING /tmp/ccpYk7fr.s 			page 40
 
 
  2178 0256 15        		.byte	0x15
@@ -2398,7 +2398,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  2232 02aa 0000 0000 		.long	.LM72
  2233 02ae 15        		.byte	0x15
  2234 02af 00        		.byte	0x0
-GAS LISTING /tmp/ccBw2xMz.s 			page 41
+GAS LISTING /tmp/ccpYk7fr.s 			page 41
 
 
  2235 02b0 05        		.uleb128 0x5
@@ -2458,7 +2458,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  2289 0307 00        		.byte	0x0
  2290 0308 05        		.uleb128 0x5
  2291 0309 02        		.byte	0x2
-GAS LISTING /tmp/ccBw2xMz.s 			page 42
+GAS LISTING /tmp/ccpYk7fr.s 			page 42
 
 
  2292 030a 0000 0000 		.long	.LM84
@@ -2518,7 +2518,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  2346 0361 00        		.byte	0x0
  2347 0362 05        		.uleb128 0x5
  2348 0363 02        		.byte	0x2
-GAS LISTING /tmp/ccBw2xMz.s 			page 43
+GAS LISTING /tmp/ccpYk7fr.s 			page 43
 
 
  2349 0364 0000 0000 		.long	.LM95
@@ -2578,7 +2578,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  2399      0101 0101 
  2400               	.LASF16:
  2401 0000 7278 5F6D 		.string	"rx_mask"
-GAS LISTING /tmp/ccBw2xMz.s 			page 44
+GAS LISTING /tmp/ccpYk7fr.s 			page 44
 
 
  2401      6173 6B00 
@@ -2638,7 +2638,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  2425 00ab 666C 6167 		.string	"flag_rx_off"
  2425      5F72 785F 
  2425      6F66 6600 
-GAS LISTING /tmp/ccBw2xMz.s 			page 45
+GAS LISTING /tmp/ccpYk7fr.s 			page 45
 
 
  2426               	.LASF7:
@@ -2698,7 +2698,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  2449      6720 756E 
  2449      7369 676E 
  2449      6564 2069 
-GAS LISTING /tmp/ccBw2xMz.s 			page 46
+GAS LISTING /tmp/ccpYk7fr.s 			page 46
 
 
  2450               	.LASF10:
@@ -2758,7 +2758,7 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  2474               	.LASF39:
  2475 01f9 696E 7465 		.string	"internal_tx_buffer"
  2475      726E 616C 
-GAS LISTING /tmp/ccBw2xMz.s 			page 47
+GAS LISTING /tmp/ccpYk7fr.s 			page 47
 
 
  2475      5F74 785F 
@@ -2806,42 +2806,42 @@ GAS LISTING /tmp/ccBw2xMz.s 			page 1
  2493      7761 6974 
  2493      696E 675F 
  2493      666F 725F 
-GAS LISTING /tmp/ccBw2xMz.s 			page 48
+GAS LISTING /tmp/ccpYk7fr.s 			page 48
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 softuart.c
-     /tmp/ccBw2xMz.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccBw2xMz.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccBw2xMz.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccBw2xMz.s:5      *ABS*:00000034 __CCP__
-     /tmp/ccBw2xMz.s:6      *ABS*:00000000 __tmp_reg__
-     /tmp/ccBw2xMz.s:7      *ABS*:00000001 __zero_reg__
-     /tmp/ccBw2xMz.s:20     .text:00000000 __vector_10
-     /tmp/ccBw2xMz.s:544    .bss:00000029 flag_tx_busy
-     /tmp/ccBw2xMz.s:545    .bss:0000002a timer_tx_ctr
-     /tmp/ccBw2xMz.s:547    .bss:0000002c internal_tx_buffer
-     /tmp/ccBw2xMz.s:546    .bss:0000002b bits_left_in_tx
-     /tmp/ccBw2xMz.s:542    .bss:00000027 flag_rx_off
-     /tmp/ccBw2xMz.s:538    .bss:00000004 flag_rx_waiting_for_stop_bit.1403
-     /tmp/ccBw2xMz.s:536    .bss:00000002 timer_rx_ctr.1405
-     /tmp/ccBw2xMz.s:543    .bss:00000028 flag_rx_ready
-     /tmp/ccBw2xMz.s:540    .bss:00000025 qin
+     /tmp/ccpYk7fr.s:2      *ABS*:0000003f __SREG__
+     /tmp/ccpYk7fr.s:3      *ABS*:0000003e __SP_H__
+     /tmp/ccpYk7fr.s:4      *ABS*:0000003d __SP_L__
+     /tmp/ccpYk7fr.s:5      *ABS*:00000034 __CCP__
+     /tmp/ccpYk7fr.s:6      *ABS*:00000000 __tmp_reg__
+     /tmp/ccpYk7fr.s:7      *ABS*:00000001 __zero_reg__
+     /tmp/ccpYk7fr.s:20     .text:00000000 __vector_10
+     /tmp/ccpYk7fr.s:544    .bss:00000029 flag_tx_busy
+     /tmp/ccpYk7fr.s:545    .bss:0000002a timer_tx_ctr
+     /tmp/ccpYk7fr.s:547    .bss:0000002c internal_tx_buffer
+     /tmp/ccpYk7fr.s:546    .bss:0000002b bits_left_in_tx
+     /tmp/ccpYk7fr.s:542    .bss:00000027 flag_rx_off
+     /tmp/ccpYk7fr.s:538    .bss:00000004 flag_rx_waiting_for_stop_bit.1403
+     /tmp/ccpYk7fr.s:536    .bss:00000002 timer_rx_ctr.1405
+     /tmp/ccpYk7fr.s:543    .bss:00000028 flag_rx_ready
+     /tmp/ccpYk7fr.s:540    .bss:00000025 qin
                              .bss:00000000 internal_rx_buffer.1407
-     /tmp/ccBw2xMz.s:539    .bss:00000005 inbuf
-     /tmp/ccBw2xMz.s:535    .bss:00000001 bits_left_in_rx.1406
-     /tmp/ccBw2xMz.s:537    .bss:00000003 rx_mask.1404
-     /tmp/ccBw2xMz.s:197    .text:0000012e softuart_init
-     /tmp/ccBw2xMz.s:254    .text:0000015a softuart_turn_rx_on
-     /tmp/ccBw2xMz.s:268    .text:00000160 softuart_turn_rx_off
-     /tmp/ccBw2xMz.s:283    .text:00000168 softuart_getchar
-     /tmp/ccBw2xMz.s:541    .bss:00000026 qout
-     /tmp/ccBw2xMz.s:318    .text:00000192 softuart_kbhit
-     /tmp/ccBw2xMz.s:338    .text:000001a4 softuart_flush_input_buffer
-     /tmp/ccBw2xMz.s:354    .text:000001ae softuart_transmit_busy
-     /tmp/ccBw2xMz.s:374    .text:000001be softuart_putchar
-     /tmp/ccBw2xMz.s:415    .text:000001ee softuart_puts
-     /tmp/ccBw2xMz.s:472    .text:00000228 softuart_puts_p
+     /tmp/ccpYk7fr.s:539    .bss:00000005 inbuf
+     /tmp/ccpYk7fr.s:535    .bss:00000001 bits_left_in_rx.1406
+     /tmp/ccpYk7fr.s:537    .bss:00000003 rx_mask.1404
+     /tmp/ccpYk7fr.s:197    .text:0000012e softuart_init
+     /tmp/ccpYk7fr.s:254    .text:0000015a softuart_turn_rx_on
+     /tmp/ccpYk7fr.s:268    .text:00000160 softuart_turn_rx_off
+     /tmp/ccpYk7fr.s:283    .text:00000168 softuart_getchar
+     /tmp/ccpYk7fr.s:541    .bss:00000026 qout
+     /tmp/ccpYk7fr.s:318    .text:00000192 softuart_kbhit
+     /tmp/ccpYk7fr.s:338    .text:000001a4 softuart_flush_input_buffer
+     /tmp/ccpYk7fr.s:354    .text:000001ae softuart_transmit_busy
+     /tmp/ccpYk7fr.s:374    .text:000001be softuart_putchar
+     /tmp/ccpYk7fr.s:415    .text:000001ee softuart_puts
+     /tmp/ccpYk7fr.s:472    .text:00000228 softuart_puts_p
 
 UNDEFINED SYMBOLS
 __do_copy_data

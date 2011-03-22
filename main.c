@@ -29,7 +29,7 @@ int main()
     while (1) {
         if (softuart_kbhit()) {
             c = softuart_getchar();
-         //   softuart_putchar(c);
+//            softuart_putchar(c);
            if (c == '1') {
                adc = read_adc(1);
                put_word(adc);
