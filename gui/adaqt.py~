@@ -9,6 +9,9 @@ from ada import *
 	
 
 class Adaqt (QMainWindow, Ui_ada):
+	"""
+	Qt frontend to Ada (Analog Data Aquisition).
+	"""
 	
 	def __init__(self, parent=None):
 		super(Adaqt, self).__init__(parent)
@@ -167,6 +170,22 @@ class Adaqt (QMainWindow, Ui_ada):
 			
 		self.ada.setVref(vref)
 		
+	
+	def resetTime(self):
+		""" Reset the time axis. """
+		if self.autoscaleCheckBox.isChecked() \
+		   or len(self.t) == 0 \
+		   or self.t[-1]  <= self.view:
+			return
+		else:
+			self.updatetimer.stop()
+			t0 = self.t[0]
+			self.t = [t-t0 for t in self.t]
+			self.axmax = self.view
+			self.axmin = 0
+			self.updatetimer.start()
+	
+		
 	def updateData(self):
 		""" Get data from the device and update plot and gui. """
 		
@@ -221,10 +240,8 @@ class Adaqt (QMainWindow, Ui_ada):
 			
 		# replot
 		self.qwtPlot.replot()
-	
-	
-	
-	
+
+
 	def connectAda(self):
 		"""	Setup communication with the device. """
 		

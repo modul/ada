@@ -170,6 +170,23 @@ class Adaqt (QMainWindow, Ui_ada):
 			
 		self.ada.setVref(vref)
 		
+	
+	def resetTime(self):
+		""" Reset the time axis. """
+		print "reset time axis"
+		if self.autoscaleCheckBox.isChecked() \
+		   or len(self.t) == 0 \
+		   or self.t[-1]  <= self.view:
+			return
+		else:
+			self.updatetimer.stop()
+			t0 = self.t[0]
+			self.t = [t-t0 for t in self.t]
+			self.axmax = self.view
+			self.axmin = 0
+			self.updatetimer.start()
+	
+		
 	def updateData(self):
 		""" Get data from the device and update plot and gui. """
 		
@@ -203,8 +220,8 @@ class Adaqt (QMainWindow, Ui_ada):
 				
 		# update curves
 		self.curve_ch1.setData(self.t, self.ch1)
-		self.curve_ch2.setData(self.t, self.ch2)
-		self.curve_ch3.setData(self.t, self.ch3)
+		self.curve_ch3.setData(self.t, self.ch2)
+		self.curve_ch2.setData(self.t, self.ch3)
 		
 		# cleanup points
 		for i in range(len(self.t)):
