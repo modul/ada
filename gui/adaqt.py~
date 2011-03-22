@@ -17,7 +17,6 @@ class Adaqt (QMainWindow, Ui_ada):
 		super(Adaqt, self).__init__(parent)
 		self.setupUi(self)
 		
-		self.t0 = time.time()
 		self.t = []
 		self.ch1 = []
 		self.ch2 = []
@@ -105,6 +104,7 @@ class Adaqt (QMainWindow, Ui_ada):
 	def startTimer(self, start):
 		if start:
 			print "start timer"
+			self.t0 = time.time()
 			self.updatetimer.start()
 		else:
 			print "stop timer"
@@ -173,16 +173,22 @@ class Adaqt (QMainWindow, Ui_ada):
 	
 	def resetTime(self):
 		""" Reset the time axis. """
-		if self.autoscaleCheckBox.isChecked() \
-		   or len(self.t) == 0 \
-		   or self.t[-1]  <= self.view:
+		print "reset time axis"
+		if self.scrollSpinBox.value() == 0 \
+		   or len(self.t) == 0 :
+		   #or self.t[-1]  <= self.view:
 			return
 		else:
 			self.updatetimer.stop()
+			
 			t0 = self.t[0]
+			self.t0 =  time.time() - self.t[-1] + t0
 			self.t = [t-t0 for t in self.t]
+						
 			self.axmax = self.view
 			self.axmin = 0
+			self.qwtPlot.setAxisScale(QwtPlot.xBottom, self.axmin, self.axmax)
+			
 			self.updatetimer.start()
 	
 		
