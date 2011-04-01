@@ -6,6 +6,7 @@
 #
 
 import serial, time
+from struct import unpack
 
 resolution = 10
 
@@ -42,8 +43,7 @@ class Ada(object):
 	def __readword(self):
 		w = self.com.read(2)
 		if len(w) == 2:
-			msb, lsb = ord(w[0]), ord(w[1])
-			return (msb << 8) + lsb
+			return unpack('!H',w)
 		else:
 			return None
 
