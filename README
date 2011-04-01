@@ -1,0 +1,10 @@
+/* 
+ * ADA - Analog data aquisition
+ * 
+ * Simple voltage reading with ATtiny25.
+ *
+ * author:  Remo Giermann <mo@liberejo.de>
+ * created: 2011/03/19
+ *
+*/
+
