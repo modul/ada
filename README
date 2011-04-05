@@ -1,10 +1,11 @@
-/* 
- * ADA - Analog data aquisition
- * 
- * Simple voltage reading with ATtiny25.
- *
- * author:  Remo Giermann <mo@liberejo.de>
- * created: 2011/03/19
- *
-*/
+ADA - Analog data aquisition
+Simple voltage reading with ATtiny25.
+
+The purpose is simply to get some analog data send to your computer.
+You ask ADA for the reading of one of three ADC channels, and it (she?) 
+answers the two bytes (10 bit resolution) over a serial connection.
+
+To make communication simple, there is a frontend script written in Python.
+And to make it enjoyable, there’s a GUI which even plots the voltages 
+(Qt, Qwt, Python – of course).
 
