@@ -1,7 +1,7 @@
 #
 # ada.py - Python frontend for ADA (Analog data aquisition)
 #
-# author:  Remo Gienmann <mo@liberejo.de>
+# author:  Remo Giermann <mo@liberejo.de>
 # created: 2011/03/19
 #
 
